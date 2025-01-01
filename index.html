@@ -4,15 +4,363 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+
     <!-- fontawsem link -->
     <link rel="stylesheet" href="css/all.min.css" />
+    <!-- animatation link -->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css" />
     <!-- bootstrap link -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- css style link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .navbar {
+        background-color: transparent;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99999999999;
+      }
+      .navbar.scrolled {
+        background-color: #ffffff !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
   </head>
   <body>
+    <!-- ---------------------------------------------------------------- -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="#"
+          ><img src="images/icons/iconname.png" style="width: 150px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Slider -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item slid-a active vh-100 vw-100">
+          <div class="container">
+            <div class="position-absolute top-50 start-30 translate-middle-y">
+              <h5 class="animate__animated animate__fadeInDown">
+                Women Collection 2025
+              </h5>
+              <h1 class="animate__animated animate__fadeInUp">NEW SEASON</h1>
+              <button
+                type="button"
+                class="btn btn-primary btn-slide animate__animated animate__zoomIn"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item slid-b vh-100 vw-100">
+          <div class="container">
+            <div class="position-absolute top-50 start-30 translate-middle-y">
+              <h5 class="animate__animated animate__rollIn">Men New-Season</h5>
+              <h1 class="animate__animated animate__lightSpeedInRight">
+                Jackets & Coats
+              </h1>
+              <button
+                type="button"
+                class="btn btn-primary btn-slide animate__animated animate__fadeInUp"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item slid-c vh-100 vw-100">
+          <div class="container">
+            <div class="position-absolute top-50 start-30 translate-middle-y">
+              <h5 class="animate__animated animate__rotateInDownLeft">
+                Men Collection 2025
+              </h5>
+              <h1 class="animate__animated animate__rotateInUpRight">
+                New arrivals
+              </h1>
+              <button
+                type="button"
+                class="btn btn-primary btn-slide animate__animated animate__rotateIn"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Footer -->
+    <footer class="footer p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+            <h4>Categories</h4>
+            <ul class="foter-list p-0">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Watches</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+            <h4>Help</h4>
+            <ul class="foter-list p-0">
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+            <h4>GET IN TOUCH</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              voluptatibus esse optio quos laborum velit atque perferendis
+            </p>
+            <div class="footer-connect-icon">
+              <a href="#"><i class="fa-brands fa-facebook-f m-2"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram m-2"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p m-2"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 p-5">
+            <h4>Newsletter</h4>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control input-subscribe"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="col-auto">
+                <button
+                  type="submit"
+                  class="btn btn-primary mb-3 btn-subscibe p-2"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="mt-5 mb-0">
+            <a href="#"><img src="images/icons/icon-pay-01.png" /></a>
+            <a href="#"><img src="images/icons/icon-pay-02.png" /></a>
+            <a href="#"><img src="images/icons/icon-pay-03.png" /></a>
+            <a href="#"><img src="images/icons/icon-pay-04.png" /></a>
+            <a href="#"><img src="images/icons/icon-pay-05.png" /></a>
+            <p class="mb-0">
+              Designed by @ <a href="#">Kasim Safwat Mohammed</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------------------------------- -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script></script>
   </body>
 </html>
+
+<!-- login modal -->
+<!-- 
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-primary animate__animated animate__fadeIn"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        Login
+      </button>
+      //Full screen modal centered with animation
+      <div
+        class="modal fade animate__animated animate__zoomIn"
+        id="myModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Recipient's username"
+                  aria-label="Recipient's username"
+                  aria-describedby="basic-addon2"
+                />
+                <span class="input-group-text" id="basic-addon2"
+                  >@example.com</span
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="basic-url" class="form-label"
+                  >Your vanity URL</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon3"
+                    >https://example.com/users/</span
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="basic-url"
+                    aria-describedby="basic-addon3 basic-addon4"
+                  />
+                </div>
+                <div class="form-text" id="basic-addon4">
+                  Example help text goes outside the input group.
+                </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Amount (to the nearest dollar)"
+                />
+                <span class="input-group-text">.00</span>
+              </div>
+
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="Username"
+                />
+                <span class="input-group-text">@</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Server"
+                  aria-label="Server"
+                />
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-text">With textarea</span>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                ></textarea>
+              </div>
+              <div class="modal-footer">
+                <input
+                  class="btn btn-primary text-center"
+                  type="submit"
+                  value="Login"
+                  data-bs-dismiss="modal"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
