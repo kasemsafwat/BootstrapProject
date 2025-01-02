@@ -13,29 +13,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- css style link -->
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .navbar {
-        background-color: transparent;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 99999999999;
-      }
-      .navbar.scrolled {
-        background-color: #ffffff !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <!-- ---------------------------------------------------------------- -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid container">
-        <a class="navbar-brand" href="#"
-          ><img src="images/icons/iconname.png" style="width: 150px"
-        /></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/icons/iconname.png" style="width: 150px" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,40 +36,117 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item m-1">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
+            <li class="nav-item m-1">
               <a class="nav-link" href="#">Shop</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item m-1">
               <a class="nav-link" href="#">Features</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item m-1">
               <a class="nav-link" href="#">Blog</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item m-1">
               <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li id="openCartButton" class="nav-item m-1 position-relative">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  class="position-absolute top-1 text-primary start-5 start-md-50 translate-middle badge rounded-pill text-bg-secondary"
+                  >+5 <span class="visually-hidden"></span></span
+              ></a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input
-              class="form-control me-2"
+              class="form-control me-2 nav-input"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-secondary" type="submit">
               Search
             </button>
           </form>
         </div>
       </div>
     </nav>
-
+    <!-- ----------------------------------------------------------------- -->
+    <!-- shopping card  -->
+    <div id="overlay"></div>
+    <div id="cartSidebar">
+      <div
+        class="d-flex justify-content-between align-items-center p-3 border-bottom"
+      >
+        <h5 class="mb-0">Your Cart</h5>
+        <button
+          class="btn-close"
+          id="closeCartButton"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="p-3">
+        <!-- Cart items -->
+        <div class="d-flex mb-3">
+          <img src="images/item-cart-01.jpg" alt="Item" class="me-3" />
+          <div>
+            <a href="#" class="mb-0">White Shirt Pleat</a>
+            <br />
+            <small>1 x $19.00</small>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <img src="images/item-cart-02.jpg" alt="Item" class="me-3" />
+          <div>
+            <a href="#" class="mb-0">Converse All Star</a>
+            <br />
+            <small>1 x $39.00</small>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <img src="images/item-cart-03.jpg" alt="Item" class="me-3" />
+          <div>
+            <a href="#" class="mb-0">Nixon Porter Leather</a>
+            <br />
+            <small>1 x $17.00</small>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <img src="images/item-cart-04.jpg" alt="Item" class="me-3" />
+          <div>
+            <a href="#" class="mb-0">Nixon Porter Leather</a>
+            <br />
+            <small>1 x $17.00</small>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <img src="images/item-cart-05.jpg" alt="Item" class="me-3" />
+          <div>
+            <a href="#" class="mb-0">Nixon Porter Leather</a>
+            <br />
+            <small>1 x $17.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 border-top">
+        <div class="d-flex justify-content-between">
+          <p class="mb-0">Total:</p>
+          <p class="mb-0">$75.00</p>
+        </div>
+        <div class="mt-3">
+          <button class="btn btn-secondary w-100 mb-2">View Cart</button>
+          <button class="btn btn-primary w-100">Check Out</button>
+        </div>
+      </div>
+    </div>
     <!-- ----------------------------------------------------------------- -->
     <!-- Slider -->
     <div
@@ -91,7 +155,7 @@
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item slid-a active vh-100 vw-100">
+        <div class="carousel-item slid-a active vh-100">
           <div class="container">
             <div class="position-absolute top-50 start-30 translate-middle-y">
               <h5 class="animate__animated animate__fadeInDown">
@@ -107,7 +171,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item slid-b vh-100 vw-100">
+        <div class="carousel-item slid-b vh-100">
           <div class="container">
             <div class="position-absolute top-50 start-30 translate-middle-y">
               <h5 class="animate__animated animate__rollIn">Men New-Season</h5>
@@ -123,7 +187,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item slid-c vh-100 vw-100">
+        <div class="carousel-item slid-c vh-100">
           <div class="container">
             <div class="position-absolute top-50 start-30 translate-middle-y">
               <h5 class="animate__animated animate__rotateInDownLeft">
