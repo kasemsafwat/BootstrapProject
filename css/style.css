@@ -468,6 +468,29 @@
   border: 1px solid #e0e0e0;
 }
 /*************************************************************************************************/
+/* back to top */
+/* Custom Styles for Back-to-Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
 /*************************************************************************************************/
 /*************************************************************************************************/
 /*************************************************************************************************/

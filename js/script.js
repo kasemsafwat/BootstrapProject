@@ -117,3 +117,25 @@ document.addEventListener("DOMContentLoaded", function () {
     quantityInput.value = value + 1;
   });
 });
+/* **************************************************************************** */
+/* back to top */
+// JavaScript for Back to Top Button
+const backToTopButton = document.getElementById("backToTop");
+
+// Show button on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    // Adjust threshold as needed
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+});
+
+// Smooth scroll to top on button click
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
