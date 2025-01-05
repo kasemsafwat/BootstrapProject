@@ -37,24 +37,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item m-1">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#products">Shop</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item m-1">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item m-1">
+              <a
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                class="nav-link"
+                href="#login"
+                >Login</a
               >
-            </li>
-            <li class="nav-item m-1">
-              <a class="nav-link" href="#">Shop</a>
-            </li>
-            <li class="nav-item m-1">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item m-1">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item m-1">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item m-1">
-              <a class="nav-link" href="#">Contact</a>
             </li>
             <li id="openCartButton" class="nav-item m-1 position-relative">
               <a class="nav-link" href="#"
@@ -79,6 +83,7 @@
         </div>
       </div>
     </nav>
+
     <!-- ----------------------------------------------------------------- -->
     <!-- shopping card  -->
     <div id="overlay"></div>
@@ -147,84 +152,922 @@
         </div>
       </div>
     </div>
+
     <!-- ----------------------------------------------------------------- -->
     <!-- Slider -->
+    <section id="home">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item slid-a active vh-100">
+            <div class="container">
+              <div
+                class="position-absolute top-50 start-30 translate-middle-y ms-5"
+              >
+                <h5 class="animate__animated animate__fadeInDown">
+                  Women Collection 2025
+                </h5>
+                <h1 class="animate__animated animate__fadeInUp">NEW SEASON</h1>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-slide animate__animated animate__zoomIn"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item slid-b vh-100">
+            <div class="container">
+              <div
+                class="position-absolute top-50 start-30 translate-middle-y ms-5"
+              >
+                <h5 class="animate__animated animate__rollIn">
+                  Men New-Season
+                </h5>
+                <h1 class="animate__animated animate__lightSpeedInRight">
+                  Jackets & Coats
+                </h1>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-slide animate__animated animate__fadeInUp"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item slid-c vh-100">
+            <div class="container">
+              <div
+                class="position-absolute top-50 start-30 translate-middle-y ms-5"
+              >
+                <h5 class="animate__animated animate__rotateInDownLeft">
+                  Men Collection 2025
+                </h5>
+                <h1 class="animate__animated animate__rotateInUpRight">
+                  New arrivals
+                </h1>
+                <button
+                  type="button"
+                  class="btn btn-primary btn-slide animate__animated animate__rotateIn"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- features section -->
+    <section class="feature" id="features">
+      <div class="container">
+        <div class="row m-4">
+          <div class="co-sm-12 col-md-6 col-lg-4 feature-card">
+            <div class="card text-bg-dark featur-card">
+              <img src="images/banner-01.jpg" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Women</h5>
+                <p class="card-text">spring 2025</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-light position-absolute animate-button featur-btn"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div class="co-sm-12 col-md-6 col-lg-4 feature-card">
+            <div class="card text-bg-dark">
+              <img src="images/banner-02.jpg" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Men</h5>
+                <p class="card-text">spring 2025</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-light position-absolute animate-button featur-btn"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div class="co-sm-12 col-md-6 col-lg-4 feature-card">
+            <div class="card text-bg-dark">
+              <img src="images/banner-03.jpg" class="card-img" alt="..." />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Accessories</h5>
+                <p class="card-text"></p>
+                <p class="card-text">spring 2025</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-light position-absolute animate-button featur-btn"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- products -->
+    <section class="products" id="products">
+      <div class="container">
+        <!-- navbar for products cards -->
+        <div class="product-nav mb-3">
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                data-filter=".all"
+                >All Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter=".men">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter=".women">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter=".bag">Bag</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter=".watches">Watches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-filter=".shoes">Shoes</a>
+            </li>
+          </ul>
+        </div>
+        <!-- cards -->
+        <div class="row">
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-01.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-02.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 men">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-03.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-04.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-05.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 watches">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-06.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-07.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-08.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 shoes">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-09.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-10.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 men">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-11.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 men">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-12.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-13.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-14.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 watches">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-15.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 col-sm-6 col-md-4 col-lg-3 women">
+            <div class="position-relative overflow-hidden card-content">
+              <img src="images/product-16.jpg" class="card-img-top" alt="..." />
+              <button
+                type="button"
+                class="btn btn-light position-absolute animate-button"
+                data-bs-toggle="modal"
+                data-bs-target="#productModal"
+              >
+                Quick View
+              </button>
+            </div>
+            <div class="row">
+              <div class="col-6 card-body pt-0">
+                <a href="#">Esprit Ruffle Shirt</a>
+                <p class="card-text">
+                  <small class="text-body-secondary">$16.64</small>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 m-5 text-center">
+            <button type="button" class="btn btn-dark btn-load">
+              Load More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- quick view section -->
+    <!-- Product Modal -->
     <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide carousel-fade"
-      data-bs-ride="carousel"
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-labelledby="productModalLabel"
+      aria-hidden="true"
     >
-      <div class="carousel-inner">
-        <div class="carousel-item slid-a active vh-100">
-          <div class="container">
-            <div class="position-absolute top-50 start-30 translate-middle-y">
-              <h5 class="animate__animated animate__fadeInDown">
-                Women Collection 2025
-              </h5>
-              <h1 class="animate__animated animate__fadeInUp">NEW SEASON</h1>
-              <button
-                type="button"
-                class="btn btn-primary btn-slide animate__animated animate__zoomIn"
-              >
-                Shop Now
-              </button>
-            </div>
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-        </div>
-        <div class="carousel-item slid-b vh-100">
-          <div class="container">
-            <div class="position-absolute top-50 start-30 translate-middle-y">
-              <h5 class="animate__animated animate__rollIn">Men New-Season</h5>
-              <h1 class="animate__animated animate__lightSpeedInRight">
-                Jackets & Coats
-              </h1>
-              <button
-                type="button"
-                class="btn btn-primary btn-slide animate__animated animate__fadeInUp"
-              >
-                Shop Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item slid-c vh-100">
-          <div class="container">
-            <div class="position-absolute top-50 start-30 translate-middle-y">
-              <h5 class="animate__animated animate__rotateInDownLeft">
-                Men Collection 2025
-              </h5>
-              <h1 class="animate__animated animate__rotateInUpRight">
-                New arrivals
-              </h1>
-              <button
-                type="button"
-                class="btn btn-primary btn-slide animate__animated animate__rotateIn"
-              >
-                Shop Now
-              </button>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Thumbnail Gallery -->
+                <div class="col-sm-12 col-lg-2">
+                  <div class="thumbnail-gallery">
+                    <img
+                      src="images/product-01.jpg"
+                      class="img-fluid mb-2"
+                      alt="Thumbnail 1"
+                    />
+                    <img
+                      src="images/product-02.jpg"
+                      class="img-fluid mb-2"
+                      alt="Thumbnail 2"
+                    />
+                    <img
+                      src="images/product-03.jpg"
+                      class="img-fluid mb-2"
+                      alt="Thumbnail 3"
+                    />
+                  </div>
+                </div>
+
+                <!-- Main Image -->
+                <div class="col-sm-12 col-lg-5">
+                  <div class="main-image">
+                    <img
+                      src="images/product-01.jpg"
+                      class="img-fluid"
+                      alt="Main product image"
+                    />
+                    <div class="nav-arrows">
+                      <button class="prev">&lt;</button>
+                      <button class="next">&gt;</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-sm-12 col-lg-5">
+                  <h2>Lightweight Jacket</h2>
+                  <p class="h4 mb-4">$58.79</p>
+
+                  <p class="text-muted">
+                    Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus
+                    ligula. Mauris consequat ornare feugiat.
+                  </p>
+
+                  <!-- Size Selection -->
+                  <div class="mb-3">
+                    <label for="size" class="form-label">Size</label>
+                    <select class="form-select" id="size">
+                      <option selected>Choose an option</option>
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                  </div>
+
+                  <!-- Color Selection -->
+                  <div class="mb-3">
+                    <label for="color" class="form-label">Color</label>
+                    <select class="form-select" id="color">
+                      <option selected>Choose an option</option>
+                      <option>Navy</option>
+                      <option>Black</option>
+                      <option>Grey</option>
+                    </select>
+                  </div>
+
+                  <!-- Quantity and Add to Cart -->
+                  <div class="d-flex align-items-center mb-4">
+                    <div class="input-group me-3" style="width: 120px">
+                      <button class="btn btn-outline-secondary" type="button">
+                        -
+                      </button>
+                      <input
+                        type="text"
+                        class="form-control text-center"
+                        value="1"
+                      />
+                      <button class="btn btn-outline-secondary" type="button">
+                        +
+                      </button>
+                    </div>
+                    <button class="btn btn-primary flex-grow-1 cart-button">
+                      ADD TO CART
+                    </button>
+                  </div>
+
+                  <!-- Social Sharing -->
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fa-brands fa-twitter"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm">
+                      <i class="fa-brands fa-google"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+
+    <!-- ------------------------------------------------------------------ -->
+    <!-- login and registration form -->
+    <!-- Login Modal -->
+    <section class="log-reg">
+      <div
+        class="modal fade login-modal"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">
+                Login to Your Account
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body px-4 py-3">
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+                <div
+                  class="mb-3 d-flex justify-content-between align-items-center"
+                >
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="remember"
+                    />
+                    <label class="form-check-label" for="remember"
+                      >Remember me</label
+                    >
+                  </div>
+                  <a href="#" class="text-decoration-none">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+
+                <div class="social-login">
+                  <p class="text-center mb-3">Or login with</p>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    <i class="fa-brands fa-google"></i> Continue with Google
+                  </button>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    <i class="fa-brands fa-facebook"></i> Continue with Facebook
+                  </button>
+                  <button type="button" class="btn btn-outline-dark">
+                    <i class="fa-brands fa-apple"></i> Continue with Apple
+                  </button>
+
+                  <p class="text-center mt-4 mb-0">
+                    Don't have an account?
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#registerModal"
+                      >Sign Up</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Register Modal -->
+      <div
+        class="modal fade register-modal"
+        id="registerModal"
+        tabindex="-1"
+        aria-labelledby="registerModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerModalLabel">
+                Create an Account
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body px-4 py-3">
+              <form>
+                <div class="row mb-3">
+                  <div class="col-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="terms"
+                    />
+                    <label class="form-check-label" for="terms">
+                      I agree to the Terms & Conditions
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Create Account
+                </button>
+
+                <div class="social-login">
+                  <p class="text-center mb-3">Or sign up with</p>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    <i class="fa-brands fa-google"></i> Sign up with Google
+                  </button>
+                  <button type="button" class="btn btn-outline-dark mb-2">
+                    <i class="fa-brands fa-facebook"></i> Sign up with Facebook
+                  </button>
+                  <button type="button" class="btn btn-outline-dark">
+                    <i class="fa-brands fa-apple"></i> Sign up with Apple
+                  </button>
+
+                  <p class="text-center mt-4 mb-0">
+                    Already have an account?
+                    <a
+                      href="#"
+                      class="text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginModal"
+                      >Login</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ------------------------------------------------------------------ -->
     <!-- Footer -->
     <footer class="footer p-3">
@@ -296,6 +1139,7 @@
         </div>
       </div>
     </footer>
+
     <!-- ------------------------------------------------------------------- -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

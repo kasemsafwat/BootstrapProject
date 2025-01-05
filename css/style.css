@@ -29,7 +29,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999999999999;
+  z-index: 99999999;
 }
 
 /* Add a background color on scroll (applies when scrolled) */
@@ -179,7 +179,7 @@
   padding: 8px 20px 8px 20px;
   font-size: 20px;
   font-weight: 500;
-  margin: 20px;
+  margin: 20px 0 0 80px;
   animation-duration: 1s;
   animation-delay: 2s;
 }
@@ -241,9 +241,232 @@
 }
 /*************************************************************************************************/
 
+/* products cards */
+.products .nav-link {
+  color: #535353;
+  margin: 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-width 6s, border-bottom-color 0.6s, color 0.6s;
+  padding: 0;
+}
+.products .nav-link:hover {
+  color: #222;
+  border-bottom-width: 6px;
+  border-bottom-color: #a9a7a7;
+}
+.products .active {
+  border-bottom: 2px solid #a9a7a7;
+}
+.products .card {
+  border: none;
+}
+
+.products .card a {
+  text-decoration: none;
+  color: #727272;
+  transition: color 0.3s;
+}
+.products .card a:hover {
+  color: #0d6efd;
+}
+.card-content {
+  perspective: 1000px;
+}
+.card-content img {
+  transition: transform 0.5s ease-in-out;
+}
+.card-content:hover img {
+  transform: translateZ(100px);
+}
+
+.products .card .btn:hover {
+  color: #ffffff;
+  background-color: #222;
+  border: none;
+}
+
+.products .animate-button {
+  top: 80%;
+  left: 25%;
+  border-radius: 20px;
+  width: 50%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.products .card-content:hover .animate-button {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hidden {
+  display: none !important;
+}
+.btn-load {
+  font-size: 15px;
+  line-height: 1.466667;
+  text-transform: uppercase;
+  background-color: #e6e6e6;
+  font-weight: bold;
+  border: none;
+  color: #222;
+  border-radius: 23px;
+  padding: 10px 40px;
+}
+
+.fa-heart {
+  transition: color 0.3s;
+}
+.fa-heart:hover {
+  color: red !important;
+}
+
 /*************************************************************************************************/
+/* style for feature section  */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+.feature-card .card {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.feature-card .card :hover {
+  background-color: #697bff;
+  color: #fff;
+  opacity: 0.6;
+}
+.feature .card {
+  border: 1px solid #e6e6e6;
+}
+
+.feature-card .featur-btn {
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  background-color: #222;
+  color: #fff;
+  border-radius: 20px;
+  width: 50%;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  /* visibility: hidden; */
+}
+.feature-card:hover .featur-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.featur-btn:hover {
+  background-color: #697bff;
+  color: #fff;
+}
 /*************************************************************************************************/
+/* quick view product style */
+.modal {
+  z-index: 99999999999999999999999999999999999;
+}
+
+.thumbnail-gallery img {
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+}
+
+.thumbnail-gallery img:hover {
+  border-color: #6c757d;
+}
+
+.main-image {
+  position: relative;
+}
+
+.nav-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.nav-arrows button {
+  position: absolute;
+  background: rgba(108, 117, 125, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+.nav-arrows button:hover {
+  background: rgba(108, 117, 125, 0.8);
+}
+
+.nav-arrows .prev {
+  left: 10px;
+}
+
+.nav-arrows .next {
+  right: 10px;
+}
+
 /*************************************************************************************************/
+/* login and registration style */
+.login-modal,
+.register-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.log-reg .modal-content {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.log-reg .modal-header {
+  border-bottom: none;
+  padding: 1rem 1rem 0;
+}
+
+.log-reg .btn-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.log-reg .form-control {
+  border-radius: 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+}
+
+.log-reg .form-control:focus {
+  box-shadow: none;
+  border-color: #000;
+}
+
+.log-reg .btn-primary {
+  border-radius: 0;
+  background-color: #007bff;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.log-reg .social-login {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.log-reg .social-login .btn {
+  border-radius: 0;
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: 1px solid #e0e0e0;
+}
 /*************************************************************************************************/
 /*************************************************************************************************/
 /*************************************************************************************************/
